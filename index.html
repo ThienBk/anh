@@ -1,274 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <title>My info</title>
-    <link ref="./main.css" />
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <div class="main">
-        <!-- Main page -->
-        <div class="profile-slice home">
-          <div class="profile">
-            <div class="profile-above">
-              <div class="avatar">
-                <!-- Link avatar -->
-                <img src="" />
-              </div>
-              <div class="info ms-4">
-                <h2>Nguyễn Anh Thiện</h2>
-                <div class="info-maxim"><i class="fad fa-comment-lines"></i> No pain, no gain!</div>
-              </div>
-            </div>
-            <div class="profile-below mt-4">
-              <h1>Chào Các Bạn,</h1>
-              <p>Sau đây tôi xin nói qua đôi chút về bản thân mình.</p>
-              <p>
-                Tôi là <b>Anh Thiện</b>, một cậu sinh viên ngành <b>Khoa học máy tính</b> với ước mơ trở thành một
-                Developer chuyên nghiệp, tôi thích khám phá, tìm tòi, học hỏi những điều thú vị trên mạng Internet. Biết
-                đôi chút về HTML, CSS, JS, NodeJS, ReactJS,...
-              </p>
-              <p>Dưới đây là một vài đường link của tôi.</p>
-              <ul class="link ps-0 mt-3">
-                <li class="link-fb">
-                  <!-- Link facebook -->
-                  <a href="https://www.facebook.com/" target="blank" title="Facebook"
-                    ><i class="fab fa-facebook-square"></i
-                  ></a>
-                </li>
-                <li class="link-ins">
-                  <!-- Link instagram -->
-                  <a href="https://www.instagram.com/" target="blank" title="Instagram"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-                <li class="link-blog">
-                  <!-- Link blog -->
-                  <a href="https://www.phamvanlinh.xyz/" target="blank" title="Blog"><i class="fab fa-blogger"></i></a>
-                </li>
-                <li class="link-git">
-                  <!-- Link github -->
-                  <a href="https://github.com/" target="blank" title="Github"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-                <li class="link-mail">
-                  <!-- Link mail  -->
-                  <a href="mailto:https://thiennguyen2000qwer@gmail.com" target="blank" title="Mail"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="profile-slice fb">
-          <div class="profile p-0">
-            <div class="fb-cover">
-              <!-- Link cover facebook -->
-              <img id="coverImg" class="cover-img" src="" alt="facebook-cover" />
-              <input type="file" id="addCover" hidden="hidden" />
-              <label class="add-cover btn btn-sm btn-secondary" for="addCover"><i class="fal fa-camera"></i></label>
-            </div>
-            <div class="fb-bottom p-3">
-              <div class="fb-avatar">
-                <!-- Link avatar facebook -->
-                <img class="avatar-img" src="" alt="facebook-avatar" />
-              </div>
-              <div class="fb-name">
-                <h1>Phạm Văn Linh</h1>
-                <span>729 Bạn bè</span>
-              </div>
-              <div class="fb-btn mb-4">
-                <!-- Link messenger -->
-                <a class="btn btn-primary mt-2 mx-1" href="https://www.messenger.com/t/100030924163397" target="_blank">
-                  <i class="fab fa-facebook-messenger"></i> Nhắn tin
-                </a>
-                <!-- Link facebook -->
-                <a class="btn btn-secondary mt-2 mx-1" href="https://www.facebook.com/hnilnavmahp.ku/" target="_blank">
-                  <i class="fas fa-rss"></i> Theo dõi
-                </a>
-              </div>
-              <div class="intro">
-                <p>
-                  <i class="fas fa-graduation-cap"></i>Học tại
-                  <b>Đại học Kinh Doanh và Công Nghệ Hà Nội</b>
-                </p>
-                <p>
-                  <i class="fas fa-graduation-cap"></i>Đã học tại
-                  <b>THPT Nghĩa Hưng A</b>
-                </p>
-                <p><i class="fas fa-map-marker-alt"></i>Đến từ <b>Nam Định</b></p>
-                <p class="mb-0"><i class="fas fa-rss"></i>Có 1600 người theo dõi</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="profile-slice ins">
-          <div class="profile">
-            <div class="ins">
-              <div class="ins-header">
-                <div class="left">
-                  <h2 class="mb-3"><i class="far fa-long-arrow-left me-3"></i> AnhThien</h2>
-                </div>
-                <div class="right">
-                  <h2><i class="far fa-bell"></i><i class="far fa-ellipsis-v ms-3"></i></h2>
-                </div>
-              </div>
-              <div class="ins-avatar">
-                <!-- Link avatar instagram -->
-                <img class="ins-avatar-image" src="" alt="instagram-avatar" />
-                <div class="ins-info d-flex ms-3">
-                  <div class="count">
-                    <h5>0</h5>
-                    <span>Bài viết</span>
-                  </div>
-                  <div class="count">
-                    <h5>66</h5>
-                    <span>Người theo dõi</span>
-                  </div>
-                  <div class="count">
-                    <h5>104</h5>
-                    <span>Đang theo dõi</span>
-                  </div>
-                </div>
-              </div>
-              <div class="ins-name mt-3">
-                <h3 class="mb-1">Nguyễn Anh Thiện</h3>
-                <a href="https:///" target="_blank">anhThien/</a>
-              </div>
-              <div class="ins-btn mt-3">
-                <!-- Link instagram -->
-                <a class="btn btn-sm btn-primary px-5" href="https://www.instagram.com//" target="_blank">
-                  Theo dõi
-                </a>
-                <!-- Link instagram -->
-                <a class="btn btn-sm btn-message px-3" href="https://www.instagram.com//" target="_blank">
-                  Nhắn tin
-                </a>
-                <!-- Link instagram -->
-                <a class="btn btn-sm btn-follow" href="https://www.instagram.com//" target="_blank">
-                  <i class="fas fa-user-plus"></i>
-                </a>
-              </div>
-              <div class="ins-body">
-                <i class="fal fa-camera"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="profile-slice blog">
-          <div class="profile">
-            <div class="blog-header">
-              <div class="left">
-                <!-- Link blog -->
-                <a href="https:///" target="_blank">
-                  <h2 class="mb-3"><i class="fal fa-bars me-1"></i> Anh Thiện</h2>
-                </a>
-              </div>
-              <div class="right d-flex">
-                <!-- Form search blog -->
-                <form class="search-form" action="https:///search" target="_blank">
-                  <input type="text" class="search-input" name="q" autocomplete="off" placeholder="Tìm kiếm" required />
-                  <span class="search-icon"><i class="fal fa-search"></i></span>
-                </form>
-              </div>
-            </div>
-            <div class="blog-body">
-              <h5>Latest Post</h5>
-              <div class="post pt-3">
-                <!-- Link post blog -->
-                <a
-                  href="https:///2022/02/share-template-profile-gioi-thieu-ban.html"
-                  target="_blank"
-                >
-                  <!-- Link thumbnail -->
-                  <img class="mb-3" src="" alt="blog-post-thumbnail" />
-                </a>
-                <span class="post-label"
-                  >in
-                  <!-- Link label -->
-                  <a href="https://www.phamvanlinh.xyz/search/label/Free" target="_blank">Free</a>
-                  /
-                  <!-- Link label -->
-                  <a href="https://www.phamvanlinh.xyz/search/label/Template" target="_blank">Template</a></span
-                >
-                <!-- Link post blog -->
-                <a
-                  href="https://www.phamvanlinh.xyz/2022/02/share-template-profile-gioi-thieu-ban.html"
-                  target="_blank"
-                >
-                  <h5 class="mt-2 mb-3">Share template giới thiệu bản thân - About Me 6.0</h5>
-                </a>
-                <p>H ế lô mọi người, chào mừng các bạn đã đến với bài viết của mình. Hôm nay mình sẽ chia sẻ...</p>
-                <p>Jan 21, 2022</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="profile-slice git">
-          <div class="profile">
-            <div class="git-avatar d-flex">
-              <!-- Link avatar git -->
-              <img class="git-avatar-img" src="" alt="github-avatar" />
-              <div class="ms-3">
-                <h1 class="mb-0">Pham Van Linh</h1>
-                <span>anhThienNguyen</span>
-              </div>
-            </div>
-            <div class="mt-3">
-              💪 No pain, no gain! <br />
-              <i class="fal fa-link"></i
-              ><a href="https:///" target="_blank">https:///</a><br />
-              <!-- Link github -->
-              <a class="btn btn-sm btn-follow w-100 mt-3" href="https://github.com/phamvanlinhxyz" target="_blank"
-                >Follow</a
-              >
-            </div>
-            <div class="git-repo px-3 py-2 mt-3">
-              <span class="git-repo-name">/README.md</span>
-              <h1 class="text-center mt-3 pb-2">Hi 👋, I'm @phamvanlinhxyz</h1>
-            </div>
-            <div class="git-repo px-3 py-2 mt-3">
-              <div class="repo-header">
-                <!-- Link repo -->
-                <a href="https://github.com/phamvanlinhxyz/Profile-6.0" target="_blank"><b>Profile-6.0</b></a>
-                <span class="badge rounded-pill bg-git">Public</span>
-              </div>
-              <p class="git-desc mt-2">
-                Profile 6.0 được phát triển dựa trên ý tưởng của Profile 4.0 và một số mạng xã hội khác.
-              </p>
-              <div class="language">
-                <span class="language-color"></span>
-                <span class="language-name">HTML</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="dark-switch"></div>
-      <div class="play-btn"></div>
-      <audio class="music-audio">
-        <!-- Link mp3 -->
-        <source src="" type="audio/mpeg" />
-      </audio>
+<head>
+  <meta charset="UTF-8">
+  <title>Cờ Caro Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <div id="board">
+      <div class="cell" onclick="clickCell(this)">X</div>
+      <div class="cell" onclick="clickCell(this)">O</div>
+      <div class="cell" onclick="clickCell(this)">X</div>
+      <div class="cell" onclick="clickCell(this)">O</div>
+      <div class="cell" onclick="clickCell(this)">X</div>
+      <div class="cell" onclick="clickCell(this)">O</div>
+      <div class="cell" onclick="clickCell(this)">X</div>
+      <div class="cell" onclick="clickCell(this)">O</div>
     </div>
-      <script src="./main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <div id="info">
+      <p>Người chơi 1: X</p>
+      <p>Người chơi 2: O</p>
+      <p>Người chơi hiện tại: X</p>
+    </div>
+    <div id="controls">
+      <button id="new-game">Mới</button>
+      <button id="two-players">Hai người</button>
+      <button id="one-player">Một người</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  <script>
+    let board = [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+    ];
+
+    let currentPlayer = "X";
+
+    let winner = null;
+
+    function init() {
+      for (let i = 0; i < board.length; i++) {
+        for (let j = 0; j < board[i].length; j++) {
+          board[i][j] = "";
+        }
+      }
+    }
+
+    function updateInfo() {
+      document.getElementById("info").querySelector("p:nth-child(1)").innerHTML = "Người chơi 1: " + currentPlayer;
+      document.getElementById("info").querySelector("p:nth-child(2)").innerHTML = "Người chơi 2: " + (currentPlayer === "X" ? "O" : "X");
+      document.getElementById("info").querySelector("p:nth-child(3)").innerHTML = "Người chơi hiện tại: " + currentPlayer;
+    }
+
+    function checkWinner() {
+      for (let i = 0; i < board.length; i++) {
+        if (board[i][0] === board[i][1] === board[i][2] !== "" && board[i][0] !== "") {
+          winner = board[i][0];
+          return true;
+        }
+        if (board[0][i] === board[1][i] === board[2][i] !== "" && board[0][i] !== "") {
+          winner = board[0][i];
+          return true;
+        }
+      }
+      if (board[0][0] === board[1][1] === board[2][2] !== "" && board[0][0] !== "") {
+        winner = board[0][0];
+        return true;
+      }
+      if (board[0][2] === board[1][1] === board[2][0] !== "" && board[0][2] !== "") {
+        winner = board[0][2];
+        return true;
+      }
+      return false;
+    }
+
+    function clickCell(cell) {
+      if (cell.textContent === "") {
+        cell.textContent = currentPlayer;
+        currentPlayer = currentPlayer === "X" ? "O" : "X";
+        updateInfo();
+        if (checkWinner()) {
+          alert("Người chơi " + winner + " đã thắng!");
+          init();
+        }
+      }
+    }
+
+    init();
+  </script>
+</body>
 </html>

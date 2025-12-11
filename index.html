@@ -46,7 +46,7 @@
 <body>
 
   <div class="paper">
-    <h2>December 11, 2025</h2>
+    <h2 id="currentDate"></h2>
 
     <div class="letter-text">
         Dear Emily,
@@ -70,5 +70,14 @@
   document.addEventListener('copy', e => e.preventDefault());
   document.addEventListener('cut', e => e.preventDefault());
   document.addEventListener('paste', e => e.preventDefault());
+  
+  
+  function formatDate(date) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+  }
+
+  document.getElementById("currentDate").innerText = formatDate(new Date());
+
 </script>
 </html>

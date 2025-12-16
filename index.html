@@ -9,92 +9,102 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Patrick+Hand&display=swap" rel="stylesheet">
 
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: url("https://i.imgur.com/9P0Qp7M.jpg"); /* nền gỗ */
-    background-size: cover;
-    font-family: 'Patrick Hand', cursive;
-  }
+ * {
+  box-sizing: border-box;
+}
 
-  .paper {
-    background: #fdfbf7;
-    width: 70%;
-    max-width: 750px;
-    margin: 60px auto;
-    padding: 40px 50px;
-    border-radius: 6px;
-    box-shadow: 0 3px 18px rgba(0,0,0,0.25);
-    line-height: 1.8;
-    font-size: 20px;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background: url("https://i.imgur.com/9P0Qp7M.jpg") center/cover no-repeat;
+  font-family: 'Patrick Hand', cursive;
+}
 
-  .paper h2 {
-    font-family: "Dancing Script", cursive;
-    font-size: 34px;
-    text-align: left;
-    margin-bottom: 20px;
-  }
+/* Khung giấy */
+.paper {
+  background: #fdfbf7;
+  width: 70%;
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 35px 45px;
+  border-radius: 6px;
+  box-shadow: 0 3px 18px rgba(0,0,0,0.25);
+  line-height: 1.6;          /* giảm dãn dòng */
+  font-size: 20px;
+}
 
-  .letter-text {
-    white-space: pre-wrap;
-    font-size: 20px;
-  }
+/* Tiêu đề ngày */
+.paper h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 34px;
+  margin: 0 0 20px 0;        /* bỏ khoảng trống dư phía trên */
+}
 
-    /* Chữ ký cuối thư */
-  .signature {
-    font-family: "Dancing Script", cursive;
-    font-size: 34px;
-    margin-top: 60px;
-    text-align: right;
-    color: #3b2f2f;
-    opacity: 0.9;
-    padding-right: 10px;
-  }
+/* Tiêu đề mục */
+.paper h3 {
+  margin: 25px 0 10px;
+  font-size: 24px;
+}
 
-  /* -----------------------------------------
-   RESPONSIVE
-------------------------------------------*/
+/* Nội dung thư */
+.letter-text {
+  white-space: pre-wrap;
+}
+
+/* Đoạn văn */
+.letter-text p {
+  margin: 8px 0;             /* giảm khoảng cách giữa các đoạn */
+}
+
+/* Ảnh minh họa */
+.letter-text img {
+  display: block;
+  max-width: 100%;
+  margin: 10px auto;         /* bỏ khoảng trống thừa */
+}
+
+/* Chữ ký */
+.signature {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  margin-top: 35px;
+  text-align: right;
+  color: #3b2f2f;
+  opacity: 0.9;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
 
 /* Tablet */
 @media (max-width: 992px) {
   .paper {
     width: 85%;
-    padding: 45px 40px;
-    font-size: 20px;
+    padding: 30px 35px;
   }
 
   .paper h2 {
-    font-size: 36px;
-  }
-
-  .paper h3 {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .signature {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   body {
-    padding: 20px 0;
-  }
-
-  img{
-    margin-left: -20px;
+    padding: 15px 0;
   }
 
   .paper {
     width: 92%;
-    padding: 30px 25px;
+    padding: 25px 20px;
     font-size: 18px;
   }
 
   .paper h2 {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
   }
 
@@ -102,13 +112,8 @@
     font-size: 22px;
   }
 
-  .letter-text img {
-    width: 100%;
-    max-width: 100%;
-  }
-
   .signature {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
